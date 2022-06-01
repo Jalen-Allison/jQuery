@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- allows us to use jQuery files by directing the users browser to go and download those files-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+ <!--line 14)  how to target a DOM object ($ means jQuery)-->
+    <!-- line 14) when the document is ready, perform the function-->
+    <!-- line 15) grab HTML tag and append the following information. Instantly will show in the browser -->
+
+<script>
+
+$(document).ready(function(){
+    $("html").append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'>Paragraph 1</p>\
+                    <p id='2'>Paragraph 2</p>\
+                    <p id='3'>Paragraph 3</p>\
+                </div>\
+            </div>\
+        </body>"
+    );
+
+    $("#2").css({"color":"red"}); 
+    $("#3").click(function() {
+        $('h1').hide("slow");
+    
+        
+    });
+});
+
+
+
+
+
+
+</script>
+</html> 
